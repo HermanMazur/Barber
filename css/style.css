@@ -34,19 +34,44 @@ body {
     margin: -1px;
 }
 
-.list{
+.list {
     list-style: none;
 }
 
-.link{
+.link {
     text-decoration: none;
 }
 
 /*---- HEADER ----*/
-.header{
+.header {
     background-color: gray;
     padding-top: 32px;
     padding-bottom: 32px;
+}
+
+.header-container {
+    display: flex; 
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 70px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header-connect {
+    margin-left: auto;
+}
+
+.header-tel {
+    margin-right: 40px;
 }
 
 .header-link,
@@ -77,9 +102,31 @@ body {
     letter-spacing: 0.09em;
     text-decoration: uppercase;
     color: var(--first-btn-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent;
+    min-width: 160px;
+    min-height: 40px;
 }
 
 /* -----HERO------ */
+
+
+
+.hero-container{
+    display: flex;
+}
+
+.hero-right {
+    background-color: #171616;
+    flex-grow: 1;
+    padding: 272px 0 206px 96px;  
+
+}
+
+.hero-list {
+    width: 93px;
+}
 
 .hero-link{
     font-weight: 600;
@@ -103,16 +150,12 @@ color: var(--accent-color);
     color: gray;
 }
 
-.hero{
-    background-color: #d4c8c8;
-}
 
 .hero-title{
     font-family: 'Raleway', sans-serif;
-    font-style: 12px;
+    font-size: 72px;
     line-height: 1.18;
-    letter-spacing: 0.5em;
-    text-decoration: uppercase;
+    letter-spacing: 0.05em;
     color: var(--first-title-color);
 }
 
@@ -121,6 +164,7 @@ color: var(--accent-color);
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9da4bd;
+    max-width: 400px;
 }
 
 /* <---- ABOUT ----> */
@@ -275,6 +319,25 @@ padding-bottom: 130px;
     padding-bottom: 130px;
 }
 
+.masters-list {
+    display: flex;
+    margin-left: -30px;
+    margin-bottom: -30px;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+
+
+.masters-item {
+    /* flex-basis: calc((100% - 90px) / 3); */
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+/* .masters-item:not(:last-child) {
+    margin-right: 30px;
+} */
+
 .masters-pre-title {
     font-weight: 600;
     font-size: 11px;
@@ -318,3 +381,15 @@ padding-bottom: 130px;
     padding-bottom: 130px;
 }
 
+.gallery-list {
+display: flex;
+flex-wrap: wrap;
+margin-left: -30px;
+margin-bottom: -30px;
+}
+
+.gallery-item {
+    width: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
