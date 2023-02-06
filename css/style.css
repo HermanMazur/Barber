@@ -1,8 +1,9 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 /* Переменн */
-:root{
+:root {
     --header-color: #ffffff;
     --first-btn-color: #ffffff;
     --second-btn-color: #303030;
@@ -10,49 +11,6 @@ body {
     --first-title-color: #ffffff;
     --second-title-color: #303030
 }
-
-
-/* .bg {
-    width: 800px;
-    height: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 10px dashed #171616;
-    color: #ffffff;
-    margin-bottom: 20px;
-    background-image:url(/images/gallery-img-4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    background-clip: padding-box;
-} */
-
-
-/* .container-gradiant {
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
-
-.linear,
-.radial {
-    height: 100px;
-}
-
-.linear {
-background-image: linear-gradient( 
-    to top, blue 0 33%, yellow 33% 60%, green 60% 100%);
-}
-
-.radial {
-    background-image: radial-gradient(ellipse at top right, blue 40%, yellow 40%);
-} */
-
-
-
-
-
-
 
 /* оборачивает контент секции и */
 .container {
@@ -83,6 +41,48 @@ background-image: linear-gradient(
 .link {
     text-decoration: none;
 }
+
+.pre-title {
+    font-weight: 600;
+    font-style: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.pre-title::before {
+    content: "";
+    height: 1px;
+    width: 63px;
+    background-color: currentColor;
+    margin-right: 21px;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-style: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-decoration: uppercase;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent;
+    min-width: 160px;
+    min-height: 40px;
+}
+
+.section-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+
+
 
 /*---- HEADER ----*/
 .header {
@@ -137,23 +137,14 @@ background-image: linear-gradient(
 }           
 
 .header-btn{
-    font-family: inherit;
-    font-weight: 600;
-    font-style: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-decoration: uppercase;
+    margin-left: 40px;
     color: var(--first-btn-color);
-    border: 1px solid var(--accent-color);
-    border-radius: 25px;
-    background-color: transparent;
-    min-width: 160px;
-    min-height: 40px;
+
 }
 
+
+
 /* -----HERO------ */
-
-
 
 .hero-container{
     display: flex;
@@ -191,12 +182,8 @@ color: var(--accent-color);
 }
 
 .hero-pre-title {
-    font-weight: 600;
-    font-style: 12px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-decoration: uppercase;
     color: gray;
+    margin-bottom: 20px;
 }
 
 
@@ -224,20 +211,19 @@ color: var(--accent-color);
 }
 
 .about-pre-title {
-    font-weight: 600;
-    font-style: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-decoration: uppercase;
     color: #303030;
     margin-bottom: 20px;
 }
 
+.about-pre-title::before {
+    content: "";
+    height: 1px;
+    width: 63px;
+    background-color: #303030;
+    margin-right: 21px;
+}
+
 .about-title{
-    font-family: Raleway,sans-serif;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
     color: var(--second-title-color);
     margin-bottom: 20px;
 }
@@ -259,12 +245,6 @@ color: var(--accent-color);
 }
 
 .about-btn{
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
     color:var(--second-btn-color);
 }
 
@@ -278,20 +258,11 @@ padding-bottom: 130px;
 }
 
 .prices-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: rgba(157, 167, 189, 0.6);
     margin-bottom: 20px;
 }
 
 .prices-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.6em;
     color: var(--first-title-color);
     margin-bottom: 44px;
 }
@@ -304,12 +275,6 @@ padding-bottom: 130px;
 }
 
 .prisec-btn{
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-decoration: uppercase;
     color: var(--first-btn-color);
 }
 
@@ -338,19 +303,12 @@ padding-bottom: 130px;
 }
 
 .reasons-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: #303030;
+    margin-bottom: 20px;
 }
 
 .reasons-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
+    margin-bottom: 20px;
     color: var(--second-title-color);
 }
 
@@ -366,6 +324,7 @@ padding-bottom: 130px;
 .masters {
     padding-bottom: 130px;
     padding-bottom: 130px;
+    background-color: #f7f7f7;
 }
 
 .masters-list {
@@ -433,20 +392,12 @@ fill: #0a5e62;
 
 
 .masters-pre-title {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: #303030;
     margin-bottom: 20px;
+
 }
 
 .masters-title {
-    font-family: "Raleway", sans-serif;
-    font-size: 42px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
     color: var(--second-title-color);
     margin-bottom: 44px;
 }
