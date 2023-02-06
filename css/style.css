@@ -252,9 +252,15 @@ color: var(--accent-color);
 /* ----- PRICES------ */
 
 .prices {
-background-color: var(--second-title-color);
+background-color: #111319;
+background-image: url(../images/prices-bg.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 padding-top: 130px;
 padding-bottom: 130px;
+max-width: 1280px;
+margin: 0 auto;
 }
 
 .prices-pre-title {
@@ -276,7 +282,55 @@ padding-bottom: 130px;
 
 .prisec-btn{
     color: var(--first-btn-color);
+    display: block;
+    margin: 0 auto;
 }
+
+.prices-list-left {
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-list-right {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.prices-wrap {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.prices-list {
+    width: 50%;
+    padding: 30px 40px;
+}
+
+.prices-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.prices-item:last-child {
+    margin-bottom: 0;
+}
+
+.prices-item::before {
+    content: "";
+    /* width: 100%; */
+    flex-grow: 1;
+    height: 1px;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+.prices-item-text:first-child {
+    order: -1;
+}
+
+
 
 /* < !-- REASONS --> */
 
@@ -438,4 +492,71 @@ margin-bottom: -30px;
     width: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
+}
+
+
+/* ------INPUT------ */
+
+
+.connect-container {
+    display: flex;
+}
+
+.connect-wrap {
+    background-color: #191c26;
+    background-image: url(../images/contacts-bg.png);
+    background-repeat: no-repeat;
+    background-size: calc(50% - 15px);
+    background-position: right;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.contacts {
+    padding-left: 100px;
+    width: calc(50% - 15px);
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+}
+
+.contacts-title {
+    color: var(--first-title-color);
+    margin-bottom: 40px;
+}
+
+.contacts-link {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    color: #9da4bd;
+}
+
+.contacts-item + .contacts-item{
+    margin-top: 20px;
+}
+
+.contacts-list {
+    max-width: 270px;
+    margin-bottom: 70px;
+}
+
+.contacts-bottom-title {
+    color: var(--first-title-color);
+    margin-bottom: 20px;
+}
+
+.contacts-bottom-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
+}
+
+.online {
+    flex-grow: 1;
+    padding-top: 130px;
+    padding-bottom: 130px;
 }
