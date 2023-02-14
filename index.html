@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
 <header class="header">
     <div class="container header-container">
         <a class="header-logo link" href="#"><img src="./images/logo.svg" alt="logo site"></a>
@@ -30,7 +29,7 @@
             </nav>      
             <div class="header-connect">
                 <a class="link header-tel" href="tel:+380939244960">+380939244960</a>
-                <button class="header-btn btn" type="button">Онлайн-запись</button>
+                <button class="header-btn btn" type="button" data-modal-open>Онлайн-запись</button>
             </div>
     </div>
 </header>
@@ -39,15 +38,23 @@
     <main>
 <section class="hero">
     <div class="container hero-container">
-        <ul class="list hero-list">
-            <li class="hero-item"><a class="link hero-link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li class="hero-item"><a class="link hero-link" href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-        </ul>
-<div class="hero-right">
-    <p class="hero-pre-title pre-title" lang="en">A hair salon for men in Kyiv</p>
-    <h1 class="hero-title" lang="en">BarberShop</h1>
-    <p class="hero-aftter-title">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом</p>
-</div>
+        <div class="hero-left">
+            <ul class="list hero-list">
+                <li class="hero-item"><a class="link hero-link" 
+                    href="#"
+                    target="_blank" 
+                    rel="noopener noreferrer">Instagram</a></li>
+                <li class="hero-item"><a class="link hero-link"
+                    href="#"
+                    target="_blank" 
+                    rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="hero-right">
+            <p class="hero-pre-title pre-title" lang="en">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title" lang="en">BarberShop</h1>
+            <p class="hero-aftter-title">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом</p>
+        </div>
     </div>
 </section>
 
@@ -153,18 +160,24 @@
 <!-- MASTERS -->
 <section id="masters" class="masters">
     <div class="container">
-    <p class="masters-pre-title pre-title">Для настоящих ценителей атмосферы</p>
+    <p class="masters-pre-title pre-title">
+        Для настоящих ценителей атмосферы
+    </p>
     <h2 class="masters-title section-title">Наши мастера</h2>
 <ul class="list masters-list">
     <li class="masters-item">
-        <img 
-            src="./images/masters-img-1.jpg" 
-            alt="Барбер стрижет клиента" 
-            height="346"
-            width="370" />
+        <div class="masters-item-wrap">
+            <img src="./images/masters-img-1.jpg" alt="Барбер стрижет клиента" height="346" width="370" />
+            <p class="masters-img-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi doloribus sed sunt corporis molestias
+                consequatur culpa nihil nisi? Earum tenetur accusamus soluta quia aliquid porro perferendis laborum, fuga eius ex
+                atque recusandae expedita eveniet animi repellendus cumque architecto! Dolorum?
+            </p>
+        </div>
             <div class="master-item-content">
         <h3 class="masters-item-title" lang="en">John Smith</h3>
         <p class="masters-item-text" lang="en">Extreme Barber</p>
+
         <ul class="masters-social-list list">
             <li class="masters-social-item">
                 <a href="" 
@@ -203,11 +216,16 @@
     </li>
     
     <li class="masters-item">
+        <div class="masters-item-wrap">
         <img 
             src="./images/masters-img-2.jpg" 
             alt="Барбер стрижет клиента" 
             height="346" 
             width="370" />
+            <p class="masters-img-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, porro reiciendis vitae fuga perferendis ab magni, libero voluptatibus sint quo rem expedita possimus doloribus? Porro veniam odio impedit eligendi, consequuntur nesciunt dolore libero nostrum obcaecati soluta, iste temporibus labore dolor?  
+            </p>
+        </div>
             <div class="master-item-content">
         <h3 class="masters-item-title" lang="en">Michele Doe</h3>
         <p class="masters-item-text" lang="en">Extreme Barber</p>
@@ -248,12 +266,19 @@
     </li>
 
     <li class="masters-item">
-        <img 
-            src="./images/masters-img-3.jpg" 
+        <div class="masters-item-wrap">
+            <img src="./images/masters-img-3.jpg" 
             alt="Барбер стрижет клиента" 
             height="346" 
             width="370" />
-            <div class="master-item-content">
+            <p class="masters-img-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, porro reiciendis vitae fuga perferendis ab
+                magni, liberLorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, porro reiciendis vitae fuga perferendis ab
+                magni, libero voluptatibus sint quo rem expedita possimus doloribus? Porro veniam odio impedit eligendi,o voluptatibus sint quo rem expedita possimus doloribus? Porro veniam odio impedit eligendi,
+                consequuntur nesciunt dolore libero nostrum obcaecati soluta, iste temporibus labore dolor?
+            </p>
+        </div>
+        <div class="master-item-content">
         <h3 class="masters-item-title" lang="en">Alan Black</h3>
         <p class="masters-item-text" lang="en">Extreme Barber</p>
         <ul class="masters-social-list list">
@@ -362,6 +387,11 @@
         </ul>
     </footer>
     
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>X</button>  
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
