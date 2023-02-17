@@ -87,7 +87,7 @@ body {
     letter-spacing: 0.05em;
 }
 
-
+/*  */
 
 
 /*---- HEADER ----*/
@@ -644,7 +644,7 @@ margin-bottom: -30px;
     transition: opacity 500ms, visibility 500ms;
 }
 
-.backdrop.is-hidden .modal{
+.backdrop.is-hidden .modal{ 
     transform: scale(0.5);
 }
 
@@ -658,6 +658,7 @@ margin-bottom: -30px;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.5);
     transition: transform 500ms;
+    
 }
 
 .modal-close {
