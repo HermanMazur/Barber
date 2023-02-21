@@ -392,9 +392,63 @@
             <button type="button" class="modal-close" data-modal-close>X</button>  
         <p class="modal-title">Form Title</p>
             <form action="#">
-        <input type="" name="user" class="input" placeholder="input your name">
-        <input type="" name="email" class="input" placeholder="input your email">
-        <input type=""  name="tel" class="input" placeholder="input your telephone">
+    <div class="form-field">
+            <label class="label" for="name">Enter your name</label>
+            <input 
+            type="name" 
+            id="name" 
+            name="user" 
+            minlength="2"  
+            maxlength="10" 
+            class="input" 
+            placeholder="input your name" 
+            required>
+            </div>
+    <div class="form-field">
+        <label class="label" for="email">Enter your email</label>
+        <input type="email" 
+            name="email" 
+            id="email" 
+            class="input" 
+            placeholder="input your email">
+    </div>
+
+    <div class="form-field">
+        <label class="label" for="user-text">Enter your comment</label>
+            <textarea 
+            name="user-text" 
+            id="user-text"
+            class="form-text"
+            placeholder="comment"></textarea>
+    </div>
+
+    <fieldset class="field-set">
+        <legend>Gender</legend>
+        <label>
+            man
+            <input 
+            type="radio"
+            name="Gender"
+            value="male">
+        </label>
+
+        <label>
+            woman
+            <input 
+            type="radio"
+            name="Gender"
+            value="female">
+        </label>
+
+        <label>
+            other
+            <input 
+            type="radio"
+            name="Gender"
+            value="other">
+        </label>
+    </fieldset>
+
         <button type="submit">Button</button>
         <button type="reset">reset</button>
         </form>
