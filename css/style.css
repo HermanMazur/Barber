@@ -740,6 +740,11 @@ border-color: #ffffff;
     position: absolute;
     right: 8px;
     top: 8px;
+    
+}
+
+.icon-x {
+transition: fill 500ms;
 }
 
 .modal-close:focus .icon-x,
