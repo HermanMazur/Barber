@@ -630,6 +630,73 @@ margin-bottom: -30px;
     flex-grow: 1;
     padding-top: 130px;
     padding-bottom: 130px;
+    padding-right: 40px;
+}
+
+.online-input-wrapper{
+display: flex;
+justify-content: space-between;
+padding-bottom: 44px;
+}
+
+.online-input,
+.online-text {
+    background-color: transparent;
+    outline: none;
+    font-weight: 600;
+    font-size: 11px;
+    color: #f7f7f7;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    border: none;
+    border-bottom: 1px solid #706d6d;
+    transition: border-color 500ms;
+    cursor: pointer;
+}
+
+.online-input{
+    width: 270px;
+    height: 24px;
+}
+
+.online-text {
+resize: none;
+width: 100%;
+height: 76px;
+margin-bottom: 44px;
+}
+
+.online-input::placeholder,
+.online-text::placeholder {
+text-transform: uppercase;
+transition: color 500ms;
+}
+
+.online-input:hover, 
+.online-input:focus,
+.online-text:hover,
+.online-text:focus {
+border-color: #ffffff;
+}
+
+.online-input:hover::placeholder,
+.online-input:focus::placeholder,
+.online-text:hover::placeholder,
+.online-text:focus::placeholder {
+    color: #ffffff;
+}
+
+.online-input-short {
+    width: 260px;
+}
+
+.online-title {
+    margin-bottom: 40px;
+    color: var(--first-title-color);
+}
+
+.online-btn{
+    color: var(--first-btn-color);
 }
 
 /* BACKDROP */
@@ -665,7 +732,7 @@ margin-bottom: -30px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid #999999;
+    border: 1px solid #534f4f;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -674,6 +741,13 @@ margin-bottom: -30px;
     right: 8px;
     top: 8px;
 }
+
+.modal-close:focus .icon-x,
+.modal-close:hover .icon-x{
+    fill: var(--accent-color);
+
+}
+
 
 .is-hidden {
     opacity: 0;
@@ -693,12 +767,34 @@ margin-bottom: -30px;
     margin-bottom: 10px;
 }
 
+.input-wrap-icon{
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top:50%;
+    transform: translateY(-50%);
+    transition: fill 500ms;
+}
+
 .input {
     width: 100%;
     height: 30px;
     border: 1px solid #999999;
-    /* margin-bottom: 10px; */
-    padding-left: 10px ;
+    padding-left: 40px ;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 500ms;
+}
+
+.input:focus{
+    border-color: var(--accent-color);
+}
+
+.input:focus + .input-icon {
+    fill: var(--accent-color);
 }
 
 .input::placeholder{
@@ -724,9 +820,9 @@ margin-bottom: -30px;
     
 }
 
-.field-set {
+/* .field-set {
     border-color: #ff6c00;
     border-radius: 5px;
     margin-bottom: 10px;
 
-}
+} */

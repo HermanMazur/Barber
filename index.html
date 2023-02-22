@@ -360,7 +360,26 @@
 <div class="connect-wrap">
     <div class="container connect-container">
     <section class="online">
-        <h2>Онлайн-запись</h2>
+        <h2 class="section-title online-title">Онлайн-запись</h2>
+    <form action="#" class="online-form">
+        <div class="online-input-wrapper">
+        <input 
+            type="text" 
+            name="online-name" 
+            placeholder="Имя*" 
+            class="online-input">
+        <input 
+            type="text" 
+            name="online-tel" 
+            placeholder="Телефон*" 
+            class="online-input online-input-short "  >
+        </div>
+        <textarea
+            name="online-text" 
+            class="online-text" 
+            placeholder="Сообщение"></textarea>
+            <button type="submit" class="btn online-btn">Отправить</button>
+    </form>
     </section>
     <section class="contacts">
         <h2 class="section-title contacts-title">Контакты</h2>
@@ -389,28 +408,62 @@
     
     <div class="backdrop " data-modal>
         <div class="modal">
-            <button type="button" class="modal-close" data-modal-close>X</button>  
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="icon-x" width="16" height="16">
+                    <use href="./images/icons.svg#x"></use>
+                </svg>
+            </button>  
         <p class="modal-title">Form Title</p>
             <form action="#">
     <div class="form-field">
             <label class="label" for="name">Enter your name</label>
-            <input 
-            type="name" 
-            id="name" 
-            name="user" 
-            minlength="2"  
-            maxlength="10" 
-            class="input" 
-            placeholder="input your name" 
-            required>
-            </div>
+                <div class="input-wrap-icon">
+                    <input 
+                        type="name" 
+                        id="name" 
+                        name="user" 
+                        minlength="2"  
+                        maxlength="10" 
+                        class="input" 
+                        placeholder="input your name" 
+                        required>
+                    <svg class="input-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-man"></use>
+                    </svg>
+                </div>
+        </div>
+
     <div class="form-field">
         <label class="label" for="email">Enter your email</label>
-        <input type="email" 
-            name="email" 
-            id="email" 
-            class="input" 
-            placeholder="input your email">
+        <div class="input-wrap-icon">
+            <input type="email" 
+                name="email" 
+                id="email" 
+                class="input" 
+                placeholder="input your email">
+                <svg class="input-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+        </div>
+    </div>
+
+    <div class="form-field">
+        <label 
+            for="user-tel" 
+            class="label">
+            Enter yor tel
+        </label>
+        <div class="input-wrap-icon">
+            <input
+                type="tel" 
+                name="user-tel" 
+                class="input" 
+                placeholder="+380" 
+                required id="user-tel" />
+            <svg class="input-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-mobile"></use>
+            </svg>
+            </div>
     </div>
 
     <div class="form-field">
@@ -422,7 +475,7 @@
             placeholder="comment"></textarea>
     </div>
 
-    <fieldset class="field-set">
+    <!-- <fieldset class="field-set">
         <legend>Gender</legend>
         <label>
             man
@@ -447,10 +500,9 @@
             name="Gender"
             value="other">
         </label>
-    </fieldset>
+    </fieldset> -->
 
         <button type="submit">Button</button>
-        <button type="reset">reset</button>
         </form>
         </div>
     </div>
