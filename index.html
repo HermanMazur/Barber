@@ -467,7 +467,9 @@
     </div>
 
     <div class="form-field">
-        <label class="label" for="user-text">Enter your comment</label>
+        <label 
+            class="label" 
+            for="user-text">Enter your comment</label>
             <textarea 
             name="user-text" 
             id="user-text"
@@ -502,7 +504,22 @@
         </label>
     </fieldset> -->
 
-        <button type="submit">Button</button>
+<div class="form-field">
+    <input 
+        type="checkbox" 
+        name="policy" 
+        id="policy" 
+        class="policy-check visually-hidden">
+    <label for="policy" class="check-text">
+            <!-- <span>
+                <svg class="policy-icon" width="15" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+            </span> -->
+                Main policy</label>
+</div>
+
+        <button type="submit" class="btn">Button</button>
         </form>
         </div>
     </div>

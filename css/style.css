@@ -825,6 +825,103 @@ transition: fill 500ms;
     
 }
 
+.check-text {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #4d4949;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* position: relative; way 3 */
+    transition: transform 500ms;
+
+}
+
+
+/* ------1 way ------ */
+/* .check-text::before{
+    content: "";
+    height: 15px;
+    width: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.policy-check:checked + .check-text::before {
+border: none;
+background-image: url(../images/checkmark.svg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+} */
+
+
+/* ---------- 2 way checked SPAN----------- */
+
+/* .check-text span {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.policy-icon {
+    fill: transparent;
+}
+
+.policy-check:checked + .check-text span {
+    border: none;
+    background-color: var(--accent-color);
+}
+
+.policy-check:checked + .check-text .policy-icon {
+    fill: #ffffff;
+    
+} */
+
+
+/* -------3 way-------- */
+
+
+.check-text::before {
+    content: "";
+    width: 40px;
+    height: 24px;
+    border: 1px solid #090b13;
+    border-radius: 50px;
+    transition: background-color 500ms;
+    margin-right: 5px;
+}
+
+.check-text::after {
+    height: 18px;
+    width: 18px;
+    content: "";
+    border-radius: 50%;
+    background-color: #454242;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    transition: transform 500ms, background-color 500ms;
+}
+
+.policy-check:checked +.check-text::after { 
+    transform: translateX(17px);
+    background-color: honeydew;
+}
+
+.policy-check:checked+.check-text::before {
+    background-color: rgb(137, 187, 137);
+}   
+
+
+/* --------------field-set------------------ */
+
 /* .field-set {
     border-color: #ff6c00;
     border-radius: 5px;
