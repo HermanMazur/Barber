@@ -60,20 +60,26 @@
 
 <!-- ABOUT -->
 <section class="about">
-    <div class="container">
+    <div class="container about-container">
 <ul class="list about-list">
     <li class="about-item"><img src="./images/about-img-1.jpg" alt="пример стрижки" width="270" height="445"></li>
     <li class="about-item"><img src="./images/about-img-2.jpg" alt="пример бороды" width="270" height="445"></li>
 </ul>
+<div class="about-wrap">
     <p class="about-pre-title pre-title">О нас</p>
     <h2 class="about-title section-title">Лучший БарберШоп твоего города</h2>
     <p class="about-after-title">
     Если ты хочешь добавить в свой образ больше уверенности - тебе точно к нам
     </p>
     <p class="about-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur quasi, aperiam sed odio fugiat vitae fuga ad quaerat, alias itaque repudiandae, nesciunt id corporis sapiente reprehenderit labore perspiciatis necessitatibus.
+        Мы команда, которая никогда не останавливается на достигнутом и
+        жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+        никогда не сможешь быть прежним. Мы команда, которая всегда с
+        клиентами "на одной волне". Поэтому, мы всегда готовы
+        усовершенствовать каждого, кто к нам приходит!
     </p>
     <button class="about-btn btn" type="button">Онлайн-запись</button>
+</div>
     </div>
 </section>
 
@@ -129,29 +135,35 @@
 
 <!-- REASONS -->
 <section class="reasons">
-    <div class="container">
-    <ul class="list reasons-list">
-        <li class="reasons-item">
-            <span class="reasons-digit">600</span>
-            <p class="reasons-item-text">Довольных клиентов в день</p>
-        </li>
-        <li class="reasons-item">
-            <span class="reasons-digit">50</span>
-            <p class="reasons-item-text">Наград за отличные сервис</p>
-        </li>
-        <li class="reasons-item">
-            <span class="reasons-digit">20</span>
-            <p class="reasons-item-text">Лучших мастеров Киева</p>
-        </li>
-        <li class="reasons-item">
-            <span class="reasons-digit">100</span>
-            <p class="reasons-item-text">Подарков постоянных клиентов</p>
-        </li>
-    </ul>
+    <div class="container reasons-container">
 
-    <p class="reasons-pre-title pre-title">старая традиционная школа</p>
-    <h2 class="reasons-title section-title">Почему приходят именно к нам</h2>
-    <p class="reasons-after-title">О нас говорят только хорошее. Но лучше 1 раз увидеть, чем 10 раз прочитать.</p>
+        <div class="reasons-left">
+            <ul class="list reasons-list">
+                <li class="reasons-item">
+                    <span class="reasons-count">600</span>
+                    <p class="reasons-item-text">Довольных клиентов в день</p>
+                </li>
+                <li class="reasons-item">
+                    <span class="reasons-count">50</span>
+                    <p class="reasons-item-text">Наград за отличные сервис</p>
+                </li>
+                <li class="reasons-item">
+                    <span class="reasons-count">20</span>
+                    <p class="reasons-item-text">Лучших мастеров Киева</p>
+                </li>
+                <li class="reasons-item">
+                    <span class="reasons-count">100</span>
+                    <p class="reasons-item-text">Подарков постоянных клиентов</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="reasons-right">
+            <p class="reasons-pre-title pre-title">старая традиционная школа</p>
+            <h2 class="reasons-title section-title">Почему приходят именно к нам</h2>
+            <p class="reasons-after-title">О нас говорят только хорошее. Но лучше 1 раз увидеть, чем 10 раз прочитать.</p>
+        </div>
+    
 </div>
 </section>
 
@@ -406,8 +418,8 @@
         </ul>
     </footer>
     
-    <div class="backdrop " data-modal>
-        <div class="modal">
+    <div class="backdrop is-hidden" data-modal >
+        <div class="modal ">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="icon-x" width="16" height="16">
                     <use href="./images/icons.svg#x"></use>
