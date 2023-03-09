@@ -1,26 +1,34 @@
-body {
+/* body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+} */
+
 /* Переменн */
-:root {
+/* :root {
     --header-color: #ffffff;
     --first-btn-color: #ffffff;
     --second-btn-color: #303030;
     --accent-color: #ff6c00;
     --first-title-color: #ffffff;
     --second-title-color: #303030
-}
+} */
 
 /* оборачивает контент секции и */
-.container {
+/* .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -31,17 +39,9 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
-}
+} */
 
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.pre-title {
+/* .pre-title {
     font-weight: 600;
     font-style: 11px;
     line-height: 1.36;
@@ -57,9 +57,9 @@ body {
     width: 63px;
     background-color: currentColor;
     margin-right: 21px;
-}
+} */
 
-.btn {
+/* .btn {
     font-family: inherit;
     font-weight: 600;
     font-style: 12px;
@@ -77,20 +77,20 @@ body {
 .btn:hover, .btn:focus {
     background-color: var(--accent-color);
     color: var(--first-btn-color);
-}
+} */
 
-.section-title {
+/* .section-title {
     font-family: "Raleway", sans-serif;
     font-size: 42px;
     line-height: 1.17;
     letter-spacing: 0.05em;
-}
+} */
 
 /*  */
 
 
 /*---- HEADER ----*/
-.header {
+/* .header {
     position: absolute;
     width: 100%;
     left: 0;
@@ -160,13 +160,13 @@ body {
     margin-left: 40px;
     color: var(--first-btn-color);
 
-}
+} */
 
 
 
 /* -----HERO------ */
 
-.hero-container{
+/* .hero-container{
     display: flex;
 }
 
@@ -245,7 +245,7 @@ color: var(--accent-color);
     letter-spacing: 0.02em;
     color: #9da4bd;
     max-width: 400px;
-}
+} */
 
 /* <---- ABOUT ----> */
 
@@ -267,10 +267,6 @@ color: var(--accent-color);
 .about-item + .about-item {
     margin-left: 30px;
 }
-
-
-
-
 
 .about-pre-title {
     color: #303030;
@@ -1007,7 +1003,6 @@ background-size: cover;
 .footer-links {
     display: flex;
     align-items: center;
-    flex-direction: row;
 }
 
 .copyright {
@@ -1032,7 +1027,7 @@ background-size: cover;
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: #303030;
-    transition: color 500ms linear;
+    transition: color 500ms l;
 }
 
 .footer-link:hover,
