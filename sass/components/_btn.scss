@@ -11,10 +11,9 @@
     min-width: 160px;
     min-height: 40px;
     transition: background-color 300ms linear, color 300ms linear;
+    &:hover, &:focus {
+        background-color: var(--accent-color);
+        color: var(--first-btn-color);
+    }
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: var(--accent-color);
-    color: var(--first-btn-color);
-}

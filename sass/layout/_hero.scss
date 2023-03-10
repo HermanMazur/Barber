@@ -20,16 +20,16 @@
     transform: rotate(-90deg) translate(-15px);
     transform-origin: top left;
     align-items: center;
-
+    &::before {
+            content: "";
+            width: 60px;
+            height: 1px;
+            background-color: #303030;
+            margin-right: 40px;
+        }
 }
 
-.hero-list::before {
-    content: "";
-    width: 60px;
-    height: 1px;
-    background-color: #303030;
-    margin-right: 40px;
-}
+
 
 .hero-left {
     width: 93px;
@@ -39,9 +39,11 @@
     padding-bottom: 40px;
 }
 
-.hero-item+.hero-item {
-    margin-left: 40px;
-}
+.hero-item {
+    & + & {
+        margin-left: 40px;
+    }
+} 
 
 .hero-link {
     font-weight: 600;
@@ -49,11 +51,9 @@
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: #303030;
-}
-
-.hero-link:hover,
-.hero-link:focus {
-    color: var(--accent-color);
+    &:focus, &:hover {
+            color: var(--accent-color);
+        }
 }
 
 .hero-pre-title {

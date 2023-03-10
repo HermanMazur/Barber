@@ -1,0 +1,45 @@
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+        &-wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 1280px;
+            margin: auto;
+            padding: 0;
+        }
+        &-links {
+            display: flex;
+            align-items: center;
+        }
+        &-item-link {
+            margin-right: 10px;
+        }
+        &-item-link:not(:last-child) {
+            margin-right: 10px;
+        }
+        &-link {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 1.36;
+            letter-spacing: 0.2em;
+            color: #303030;
+            transition: color 500ms linear;
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+        }
+}
+
+
+.copyright {
+    font-family: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #555555;
+    margin-left: 0;
+}
+

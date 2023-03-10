@@ -39,33 +39,28 @@
     letter-spacing: 0.1em;
     color: var(--header-color);
     transition: color 300ms linear;
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
 }
 
 .current {
     color: var(--accent-color);
     position: relative;
-}
-
-.current::after {
-    content: "";
-    width: 100%;
-    height: 5px;
-    border-radius: 3px;
-    position: absolute;
-    background-color: #ff6c00;
-    left: 0;
-    bottom: -32px;
-}
-
-.header-link:hover,
-.header-link:focus,
-.header-tel:hover,
-.header-tel:focus {
-    color: var(--accent-color);
+    &::after {
+            content: "";
+            width: 100%;
+            height: 5px;
+            border-radius: 3px;
+            position: absolute;
+            background-color: #ff6c00;
+            left: 0;
+            bottom: -32px;
+        }
 }
 
 .header-btn {
     margin-left: 40px;
     color: var(--first-btn-color);
-
 }

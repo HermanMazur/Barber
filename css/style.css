@@ -249,7 +249,7 @@ color: var(--accent-color);
 
 /* <---- ABOUT ----> */
 
-.about {
+/* .about {
     padding-top: 139px;
     padding-bottom: 121px;
 }
@@ -305,12 +305,12 @@ color: var(--accent-color);
 
 .about-btn{
     color:var(--second-btn-color);
-}
+} */
 
 
 /* ----- PRICES------ */
 
-.prices {
+/* .prices {
 background-color: #111319;
 background-image: url(../images/prices-bg.png);
 background-repeat: no-repeat;
@@ -376,7 +376,6 @@ margin: 0 auto;
 
 .prices-item::before {
     content: "";
-    /* width: 100%; */
     flex-grow: 1;
     height: 1px;
     border-bottom: 1px solid rgba(157, 164, 189, 0.12);
@@ -387,13 +386,13 @@ margin: 0 auto;
 
 .prices-item-text:first-child {
     order: -1;
-}
+} */
 
 
 
 /* < !-- REASONS --> */
 
-.reasons {
+/* .reasons {
     padding-top: 121px;
     padding-bottom: 130px;
 }
@@ -479,7 +478,7 @@ margin: 0 auto;
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #555555;
-}
+} */
 
 /*--------MASTERS------- */
 
@@ -489,26 +488,24 @@ margin: 0 auto;
     background-color: #f7f7f7;
 }
 
-.masters-list {
+/* .masters-list {
     display: flex;
     margin-left: -30px;
     margin-bottom: -30px;
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
-}
+
+} */
+ /* justify-content: space-between; */
+ /* flex-wrap: wrap; */
 
 
-.masters-item {
-    /* flex-basis: calc((100% - 90px) / 3); */
+
+/* .masters-item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
-
-}
-/* .masters-item:not(:last-child) {
-    margin-right: 30px;
 } */
 
+/* 
 .masters-item:hover .masters-img-text {
 transform: translateY(0);
 }
@@ -569,7 +566,7 @@ transform: translateY(0);
 .master-social-link:focus {
     background-color: tomato;
     color: teal;
-}
+} */
 
 
 /* первый способ заливки ссылки с иконкой!!!!1111 */
@@ -579,7 +576,7 @@ fill: #0a5e62;
 } */
 
 
-.masters-pre-title {
+/* .masters-pre-title {
     color: #303030;
     margin-bottom: 20px;
 
@@ -606,11 +603,11 @@ fill: #0a5e62;
     letter-spacing: 0.2em;
     color: #ff6c00;
     margin-bottom: 30px;
-}
+} */
 
 /* -----GALLERY----- */
 
-.gallery {
+/* .gallery {
     padding-top: 130px;
     padding-bottom: 130px;
 }
@@ -626,13 +623,13 @@ margin-bottom: -30px;
     width: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
-}
+} */
 
 
 /* ------INPUT------ */
 
 
-.connect-container {
+/* .connect-container {
     display: flex;
 }
 
@@ -644,10 +641,11 @@ margin-bottom: -30px;
     background-position: right;
     max-width: 1280px;
     margin: 0 auto;
-}
+} */
 
+/* ------------- CONTACTS------------ */
 
-.contacts {
+/* .contacts {
     padding-left: 100px;
     width: calc(50% - 15px);
     padding-top: 130px;
@@ -687,16 +685,18 @@ margin-bottom: -30px;
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9da4bd;
-}
+} */
 
-.online {
+/* --------------ONLINE-------------- */
+
+/* .online {
     flex-grow: 1;
     padding-top: 130px;
     padding-bottom: 130px;
     padding-right: 40px;
-}
+} */
 
-.online-input-wrapper{
+/* .online-input-wrapper{
 display: flex;
 justify-content: space-between;
 padding-bottom: 44px;
@@ -760,15 +760,14 @@ border-color: #ffffff;
 
 .online-btn{
     color: var(--first-btn-color);
-}
+} */
 
 /* BACKDROP */
 
-.backdrop {
+/* .backdrop {
     position: fixed;
     top:0;
     background-color: #30303050;
-    /* all width of screen  width: 100vw;*/
     width: 100vw;
     height: 100vh;
     transition: opacity 500ms, visibility 500ms;
@@ -895,9 +894,7 @@ transition: fill 500ms;
     display: flex;
     align-items: center;
     position: relative;
-    /* position: relative; way 3 */
     transition: transform 500ms;
-
 }
 
 
@@ -951,7 +948,7 @@ background-size: cover;
 /* -------3 way-------- */
 
 
-.check-text::before {
+/* .check-text::before {
     content: "";
     width: 40px;
     height: 24px;
@@ -980,12 +977,12 @@ background-size: cover;
 
 .policy-check:checked+.check-text::before {
     background-color: rgb(137, 187, 137);
-}   
+}    */
 
 
 /* FOOTER */
 
-.footer {
+/* .footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -1033,7 +1030,7 @@ background-size: cover;
 .footer-link:hover,
 .footer-link:focus {
     color: var(--accent-color);
-}
+} */
 
 
 /* --------------field-set------------------ */
