@@ -2,17 +2,15 @@
     padding-top: 10px;
     padding-bottom: 10px;
         &-wrap {
-            display: flex;
+            @extend %align-list;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
             width: 1280px;
             margin: auto;
             padding: 0;
         }
         &-links {
-            display: flex;
-            align-items: center;
+            @extend %align-list;
         }
         &-item-link {
             margin-right: 10px;

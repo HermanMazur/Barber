@@ -6,24 +6,23 @@
     padding-bottom: 32px;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
+.header__container {
+    @extend %align-list;
 }
 
-.header-logo {
+.header__logo {
     margin-right: 70px;
 }
 
-.header-list {
+.site-list {
     display: flex;
 }
 
-.header-item:not(:last-child) {
+.site-list__item:not(:last-child) {
     margin-right: 40px;
 }
 
-.header-connect {
+.connect {
     margin-left: auto;
 }
 
@@ -31,8 +30,8 @@
     margin-right: 40px;
 }
 
-.header-link,
-.header-tel {
+.site-list__link,
+.connect__tel {
     font-weight: 600;
     font-style: 12px;
     line-height: 1.33;
@@ -60,7 +59,7 @@
         }
 }
 
-.header-btn {
+.connect-btn {
     margin-left: 40px;
     color: var(--first-btn-color);
 }

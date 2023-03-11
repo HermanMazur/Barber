@@ -1,0 +1,29 @@
+.masters-list__social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.socials__item {
+    &+& {
+        margin-left: 10px;
+    }
+}
+
+.socials__link {
+    width: 44px;
+    height: 44px;
+    background-color: teal;
+    @extend %align-list;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+    &:focus,
+    &:hover {
+        background-color: tomato;
+        color: teal;
+    }
+}
+
+.socials__icon {
+    fill: currentColor;
+}
